@@ -1,0 +1,1602 @@
+$bar: rgb(245,245,245)
+$transp-bar: rgba(245,245,245,0.8)
+$green: #66ff66
+$dark-gray: #858585
+$light-gray: #CACACA
+$tab-gray:#B1B1B1
+$white: #eeeeee
+$blue: #0088cc
+$blueButton: linear-gradient(180deg, #BDE0F1, #33A0D6)
+$grey-blue: #D8DDE2
+$red: #FF6D61
+$yellow: #FFC661
+$transp-text: rgba(1,1,1,0.6)
+$windowBar: linear-gradient(180deg, #cbcbcb, #d7d7d7)
+$emailButton: linear-gradient(0deg, #39B54A, #B1E5CA)
+
+
+body
+    margin: 0
+    overflow: hidden
+
+
+.wrapper
+    max-width: 100%
+    height: 100vh
+    background-image: url(images/wallpaper5.jpg)
+    background-size: cover
+
+
+
+
+    #topNav
+        width: 100%
+        max-height: 22px
+        background-color: $transp-bar
+        position: fixed
+        top: 0
+        box-shadow: 0px 0px 22px 0px #888888
+        z-index: 999
+
+
+
+        ul.left li
+            position: relative
+
+
+ul
+    list-style-type: none
+    padding: 0
+
+.glyphicon-apple
+    padding: 0 0 0 20px
+
+
+.glyphicon
+    top: 0
+    font-size: 18px
+
+ul.left
+    display: block
+    float: left
+    li
+        display: inline-block
+        margin: 0
+        padding: 0 10px
+        font-size: 16px
+
+
+li.miniLogo
+    font-weight: bolder
+    font-size: 14px
+    letter-spacing: -2px
+li.bold
+    font-weight: bolder
+    font-size: 14px
+
+ul.right
+    display: block
+    float: right
+    li
+        display: inline-block
+        margin: 0
+        padding: 1px 10px
+        font-size: 16px
+        font-weight: 500
+
+
+#iconOverview
+    position: absolute
+    right: 20px
+    top: 160px
+
+
+#iconAbout
+    position: absolute
+    right: 20px
+    top: 260px
+
+#iconPortfolio
+    position: absolute
+    right: 20px
+    top: 360px
+
+#iconWelcome
+    position: absolute
+    right: 20px
+    top: 60px
+
+
+
+.desktop_icon
+
+    cursor: pointer
+    .icon
+        padding: 0 20px
+        margin: 40px
+        &:hover
+            background-color: $transp-bar
+            border-radius: 5px
+
+
+    img
+        height: auto
+        width: 72px
+
+
+
+    p
+        width: 72px
+        text-align: center
+        font-weight: 700
+        color: rgb(245,245,245)
+        text-shadow: 0px 2px 8px #111111
+
+.window
+    //border: 1px solid black
+    position: absolute
+
+    .windowBar
+        height: 40px
+        background: $grey-blue
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+
+
+
+
+        ul.button
+            display: inline-block
+
+        ul.tab
+            display: inline-block
+            cursor: default
+
+
+            li
+                //background-color: $tab-gray
+                padding: 3px 12px
+                font-weight: 900
+
+                //border-radius: 5px
+                color: rgba(1,1,1,0.6)
+                letter-spacing: 0px
+
+    .glyphicon
+        cursor: auto
+
+    .glyphicon-remove-sign
+        color: $light-gray
+        margin: 10px 2px 0 10px
+        &:hover
+            color: $red
+    .glyphicon-minus-sign
+        color: $light-gray
+        margin: 10px 2px 0 10px
+        &:hover
+            color: $yellow
+
+
+
+    .windowIcon
+        width: 32%
+        float: left
+
+        img
+            position: absolute
+            top: 60%
+            transform: translate(0%, -60%)
+            height: 300px
+
+    .about
+        text-align: left
+        width: 66%
+        float: right
+
+        p
+            font-weight: 700
+            span
+                font-weight: 300
+                padding-left: 10px
+
+
+#dock
+    position: fixed
+    display: inline-block
+    bottom: -10px
+    left: 50%
+    transform: translate(-50%)
+    height: 100px
+    max-width: 50%
+
+    background-color: rgba(151,151,151,0.7)
+    border-radius: 5px
+    z-index: 9999
+
+
+
+
+
+
+    span.border
+        border-left: 2px solid gray
+        position: relative
+        top: 10px
+        bottom: 20px
+
+    .minFolderOverview
+
+        display: none
+    .minFolderAbout
+
+        display: none
+    .minFolderWelcome
+
+        display: none
+    .minFolderPortfolio
+        display: none
+
+
+#sort
+
+    display: inline-block
+
+
+
+
+    img
+
+        height: 60px
+        width:  60px
+        margin: 15px 20px
+        float: left
+        cursor: pointer
+        &:hover
+            transform: scale(1.1)
+            transition: .2s
+
+#noSort
+    float: right
+
+    display: inline-block
+
+    img
+
+        height: 50px
+        width:  50px
+        margin: 5px 10px
+
+        cursor: pointer
+        &:hover
+            transform: scale(1.1)
+            transition: .2s
+
+
+.windowAbout
+    display: none
+    position: absolute
+    left: 4%
+    top: 16%
+
+    height: 350px
+    width: 550px
+    background-color: rgba(245,245,245,1)
+    border-radius: 5px
+    z-index: 1
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+
+
+
+.windowSettings
+    display: none
+    left: 6%
+    top: 26%
+    position: absolute
+    height: 350px
+
+    width: 550px
+    background-color: rgba(245,245,245,1)
+    border-radius: 5px
+    z-index: 1
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+
+
+    .setting
+        margin: 0
+        display: block
+
+        .wallpaper
+            margin: 2%
+            width: 150px
+
+
+            h4
+                border-bottom: 1px solid $light-gray
+                color: $transp-text
+                text-align: center
+                font-weight: 700
+
+            button
+                width: 150px
+                margin: 5px 0
+                padding: 5px 10px
+                border: 0
+                border-radius: 0px
+                color: rgba(1,1,1,0.7)
+                background: linear-gradient(180deg, $grey-blue, $tab-gray)
+                cursor: pointer
+
+                &:hover
+                    background: linear-gradient(180deg, #7DB1E5, #97C1EA)
+
+
+                &:active
+                    background: -webkit-linear-gradient(0deg, $light-gray, $tab-gray)
+                    background: -o-linear-gradient(0deg, $light-gray, $tab-gray)
+                    background: linear-gradient(0deg, $light-gray, $tab-gray)
+
+                &:focus
+                    outline: 0
+.windowOverview
+    display: none
+    position: absolute
+    left: 3%
+    top: 11%
+
+    height: 350px
+    width: 550px
+    background-color: rgba(245,245,245,1)
+    border-radius: 5px
+    z-index: 1
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+
+
+
+
+.windowEmail
+    display: none
+    position: absolute
+    left: 7%
+    top: 31%
+
+    height: 350px
+    width: 550px
+    background-color: rgba(245,245,245,1)
+    border-radius: 5px
+    z-index: 1
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+
+
+
+
+
+    input
+        width: 100%
+        padding: 5px 0
+        background: rgba(245,245,245,1)
+        border: 0
+        &:focus
+            outline: none
+    input::-webkit-input-placeholder
+        font-weight: 700
+
+    textarea
+        min-height: 200px
+        width: 100%
+        max-width: 100%
+        max-height: 200px
+        margin: 5px 0 0 0
+        border: 0
+        background: rgba(245,245,245,1)
+        resize: none
+        border-top: 1px solid $light-gray
+
+        &:focus
+            outline: none
+    input[type=submit]
+        border: 1px solid $light-gray
+        border-bottom-left-radius: 5px
+        border-bottom-right-radius: 5px
+        position: absolute
+        bottom: 0
+        left: 0
+        font-weight: 700
+
+        &:hover
+            background: $emailButton
+            color: $transp-text
+    input[name=name]
+        padding-left: 10px
+        border-bottom: 1px solid $light-gray
+    input[name=_replyto]
+        padding-left: 10px
+    textarea[name=message]
+        padding-left: 10px
+
+a.desktop_icon
+    &:hover
+        text-decoration: none
+
+.windowWelcome
+
+    position: absolute
+    left: 2%
+    top: 6%
+
+    height: 350px
+    width: 550px
+    background-color: rgba(245,245,245,1)
+    border-radius: 5px
+    z-index: 0
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+    span
+        font-family: monospace
+        h4, h5
+            margin: 10px
+
+.windowPortfolio
+    display: none
+    position: absolute
+    left: 5%
+    top: 21%
+
+
+
+    width: 850px
+    background-color: rgba(245,245,245,1)
+    border-radius: 5px
+    z-index: 0
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+
+    .portfolioGrid
+
+        margin: 1% 1% 0 1%
+
+
+
+
+
+        .item
+            position: relative
+            width: 33%
+            display: inline-block
+            border: 1px solid $light-gray
+            margin-bottom: 1%
+
+
+
+
+            &:hover
+                background: linear-gradient(180deg, #7DB1E5, #97C1EA)
+            img
+                height: auto
+                width: 100%
+                display: inline-block
+
+
+
+
+            p
+                width: 100%
+                text-align: center
+                font-weight: 300
+                color: $transp-text
+                margin: 6px 0 0 0
+.windowGallery
+    height: 600px
+    width: 750px
+    position: absolute
+    border-radius: 5px
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+    left: 50%
+    top: 10%
+    background-color: rgba(245,245,245,1)
+    display: none
+
+    .galleryWrapper
+
+        .galleryItem
+            display: inline-block
+
+
+
+            .galleryImage
+
+                img
+                    width: 90%
+                    margin: 5%
+            .galleryText
+                p
+                    width: 90%
+                    margin: 0 5%
+
+        #forest
+            display: none
+        #cate
+            display: none
+
+
+.loaderWrapper
+    position: fixed
+    height: 100vh
+    left: 0
+    right: 0
+    background: #33333E
+
+    z-index: 9999
+
+    #loading
+        position: relative
+        font-family: monospace
+        color: white
+
+        margin: 200px
+        font-size: 16px
+        .loadText
+
+            display: inline
+
+
+
+@media screen and (max-width: 414px) and (max-height: 736px)
+
+    #dock
+        position: fixed
+        display: inline-block
+        bottom: -5px
+        left: 0
+        right: 0
+        transform: none
+        height: 10%
+        max-width: 100%
+
+        background-color: rgba(151,151,151,0.7)
+        border-radius: 0px
+        z-index: 9999
+
+        #sort
+            display: inline-block
+            position: relative
+            left: 50%
+            transform: translate(-50%)
+            img
+
+                height: 50px
+                width:  50px
+                margin: 7px
+                float: left
+                cursor: pointer
+
+    .desktop_icon
+
+        cursor: pointer
+        .icon
+            padding: 0 20px
+            margin: 5px
+            &:hover
+                background-color: $transp-bar
+                border-radius: 5px
+
+
+        img
+            height: auto
+            width: 50px
+
+
+
+        p
+            width: 50px
+            font-size: 12px
+            text-align: center
+            font-weight: 100
+            color: rgb(245,245,245)
+            text-shadow: 0px 2px 8px #111111
+    #iconOverview
+        position: absolute
+        right: 10px
+        top: 140px
+
+
+    #iconAbout
+        position: absolute
+        right: 10px
+        top: 230px
+
+    #iconPortfolio
+        position: absolute
+        right: 10px
+        top: 320px
+
+    #iconWelcome
+        position: absolute
+        right: 10px
+        top: 50px
+
+    .window
+        width: 100%
+        height: 88vh
+        position: absolute
+        top: 20px
+        left: 0
+        right: 0
+
+        border-radius: 0px
+        .windowBar
+            border-top-left-radius: 0px
+            border-top-right-radius: 0px
+
+        .glyphicon-remove-sign
+            color: $red
+            margin: 10px 2px 0 10px
+
+
+        .glyphicon-minus-sign
+            color: $yellow
+            margin: 10px 2px 0 10px
+
+        .about
+            text-align: left
+            width: 90%
+            float: right
+
+
+    .windowPortfolio
+        display: none
+        position: absolute
+        left: 0
+        top: 20px
+        width: 100%
+        background-color: rgba(245,245,245,1)
+        border-radius: 0px
+        z-index: 0
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+
+        .portfolioGrid
+            margin: 1% 1% 0 1%
+            .item
+                position: relative
+                width: 49.5%
+                display: inline-block
+                border: 1px solid $light-gray
+                margin-bottom: 1%
+                &:hover
+                    background: linear-gradient(180deg, #7DB1E5, #97C1EA)
+                img
+                    height: auto
+                    width: 100%
+                    display: inline-block
+
+                p
+                    width: 100%
+                    text-align: center
+                    font-weight: 300
+                    color: $transp-text
+                    margin: 6px 0 0 0
+
+    .windowWelcome
+        width: 70%
+        position: absolute
+        height: auto
+        top: 50px
+        left: 15px
+    .wrapper
+        #topNav
+            width: 100%
+            height: 20px
+            background-color: $transp-bar
+            position: fixed
+            top: 0
+            box-shadow: none
+            z-index: 0
+
+
+
+            ul.left li
+                position: relative
+
+
+            ul
+                list-style-type: none
+                padding: 0
+
+
+            ul.left
+                display: none
+
+            ul.right
+                display: block
+                float: left
+                li
+                    display: inline-block
+                    margin: 0
+                    padding: 1px 5px
+                    font-size: 12px
+                    font-weight: 500
+
+@media screen and (min-width: 1024px) and (max-width: 1200px)
+
+    #dock
+        position: fixed
+        display: inline-block
+        bottom: -5px
+        left: 0
+        right: 0
+        transform: none
+        height: 65px
+        max-width: 100%
+
+        background-color: rgba(151,151,151,0.7)
+        border-radius: 0px
+        z-index: 9999
+
+        #sort
+            display: inline-block
+            position: relative
+            left: 50%
+            transform: translate(-50%)
+            img
+
+                height: 50px
+                width:  50px
+                margin: 5px 20px
+                float: left
+                cursor: pointer
+
+    .desktop_icon
+
+        cursor: pointer
+        .icon
+            padding: 0 25px
+            margin: 5px
+            &:hover
+                background-color: $transp-bar
+                border-radius: 5px
+
+
+        img
+            height: auto
+            width: 60px
+
+
+
+        p
+            width: 60px
+            font-size: 16px
+            text-align: center
+            font-weight: 500
+            color: rgb(245,245,245)
+            text-shadow: 0px 2px 8px #111111
+    #iconOverview
+        position: absolute
+        right: 10px
+        top: 140px
+
+
+    #iconAbout
+        position: absolute
+        right: 10px
+        top: 230px
+
+    #iconPortfolio
+        position: absolute
+        right: 10px
+        top: 320px
+
+    #iconWelcome
+        position: absolute
+        right: 10px
+        top: 50px
+
+    .window
+
+
+        .windowBar
+            border-top-left-radius: 0px
+            border-top-right-radius: 0px
+
+        .glyphicon-remove-sign
+            color: $red
+            margin: 10px 2px 0 10px
+
+
+        .glyphicon-minus-sign
+            color: $yellow
+            margin: 10px 2px 0 10px
+
+        .about
+            text-align: left
+            width: 90%
+            float: right
+
+
+    .windowPortfolio
+        display: none
+        position: absolute
+
+        width: 60%
+        background-color: rgba(245,245,245,1)
+        border-radius: 0px
+        z-index: 0
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+
+        .portfolioGrid
+            margin: 1% 1% 0 1%
+            .item
+                position: relative
+                width: 32.8%
+                display: inline-block
+                border: 1px solid $light-gray
+                margin-bottom: 1%
+                &:hover
+                    background: linear-gradient(180deg, #7DB1E5, #97C1EA)
+                img
+                    height: auto
+                    width: 100%
+                    display: inline-block
+
+                p
+                    width: 100%
+                    text-align: center
+                    font-weight: 300
+                    color: $transp-text
+                    margin: 6px 0 0 0
+
+    .windowWelcome
+
+        position: absolute
+
+        top: 50px
+        left: 15px
+    .windowGallery
+
+        width: 60%
+        position: absolute
+        border-radius: 5px
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+        left: 20%
+        top: 4%
+        background-color: rgba(245,245,245,1)
+        display: none
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+
+    #dock
+        position: fixed
+        display: inline-block
+        bottom: -5px
+        left: 0
+        right: 0
+        transform: none
+        height: 65px
+        max-width: 100%
+
+        background-color: rgba(151,151,151,0.7)
+        border-radius: 0px
+        z-index: 9999
+
+        #sort
+            display: inline-block
+            position: relative
+            left: 50%
+            transform: translate(-50%)
+            img
+
+                height: 50px
+                width:  50px
+                margin: 5px 20px
+                float: left
+                cursor: pointer
+
+    .desktop_icon
+
+        cursor: pointer
+        .icon
+            padding: 0 25px
+            margin: 5px
+            &:hover
+                background-color: $transp-bar
+                border-radius: 5px
+
+
+        img
+            height: auto
+            width: 60px
+
+
+
+        p
+            width: 60px
+            font-size: 16px
+            text-align: center
+            font-weight: 500
+            color: rgb(245,245,245)
+            text-shadow: 0px 2px 8px #111111
+    #iconOverview
+        position: absolute
+        right: 10px
+        top: 140px
+
+
+    #iconAbout
+        position: absolute
+        right: 10px
+        top: 230px
+
+    #iconPortfolio
+        position: absolute
+        right: 10px
+        top: 320px
+
+    #iconWelcome
+        position: absolute
+        right: 10px
+        top: 50px
+
+    .window
+
+
+        .windowBar
+            border-top-left-radius: 0px
+            border-top-right-radius: 0px
+
+        .glyphicon-remove-sign
+            color: $red
+            margin: 10px 2px 0 10px
+
+
+        .glyphicon-minus-sign
+            color: $yellow
+            margin: 10px 2px 0 10px
+
+        .about
+            text-align: left
+            width: 90%
+            float: right
+
+
+    .windowPortfolio
+        display: none
+        position: absolute
+
+        width: 75%
+        background-color: rgba(245,245,245,1)
+        border-radius: 0px
+        z-index: 0
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+
+        .portfolioGrid
+            margin: 1% 1% 0 1%
+            .item
+                position: relative
+                width: 32.33%
+                display: inline-block
+                border: 1px solid $light-gray
+                margin-bottom: 1%
+                &:hover
+                    background: linear-gradient(180deg, #7DB1E5, #97C1EA)
+                img
+                    height: auto
+                    width: 100%
+                    display: inline-block
+
+                p
+                    width: 100%
+                    text-align: center
+                    font-weight: 300
+                    color: $transp-text
+                    margin: 6px 0 0 0
+
+    .windowWelcome
+
+        position: absolute
+
+        top: 50px
+        left: 15px
+    .windowGallery
+
+        width: 60%
+        position: absolute
+        border-radius: 5px
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+        left: 20%
+        top: 10%
+        background-color: rgba(245,245,245,1)
+        display: none
+@media screen and (min-width: 600px) and (max-width: 767px)
+    #dock
+        position: fixed
+        display: inline-block
+        bottom: -5px
+        left: 0
+        right: 0
+        transform: none
+        height: 55px
+        max-width: 100%
+
+        background-color: rgba(151,151,151,0.7)
+        border-radius: 0px
+        z-index: 9999
+
+        #sort
+            display: inline-block
+            position: relative
+            left: 50%
+            transform: translate(-50%)
+            img
+
+                height: 40px
+                width:  40px
+                margin: 5px 20px
+                float: left
+                cursor: pointer
+
+    .desktop_icon
+
+        cursor: pointer
+        .icon
+            padding: 15px 20px
+            margin: 10px 0 0 0
+            &:hover
+                background-color: $transp-bar
+                border-radius: 5px
+
+
+        img
+            height: auto
+            width: 40px
+
+
+
+        p
+            width: 40px
+            font-size: 10px
+            text-align: center
+            font-weight: 500
+            color: rgb(245,245,245)
+            text-shadow: 0px 2px 8px #111111
+    #iconOverview
+        position: absolute
+        right: 10px
+        top: 60px
+
+
+    #iconAbout
+        position: absolute
+        right: 10px
+        top: 120px
+
+    #iconPortfolio
+        position: absolute
+        right: 10px
+        top: 180px
+
+    #iconWelcome
+        position: absolute
+        right: 10px
+        top: 5px
+
+    .window
+        width: 80%
+        font-size: 12px
+        h4, h5
+            font-size: 12px
+        .windowBar
+            border-top-left-radius: 0px
+            border-top-right-radius: 0px
+
+        .glyphicon-remove-sign
+            color: $red
+            margin: 10px 2px 0 10px
+
+
+        .glyphicon-minus-sign
+            color: $yellow
+            margin: 10px 2px 0 10px
+
+        .about
+            text-align: left
+            width: 90%
+            float: right
+
+
+    .windowPortfolio
+        display: none
+        position: absolute
+        top: 20px
+        left: 0px
+        width: 100%
+        height: 84vh
+        background-color: rgba(245,245,245,1)
+        border-radius: 0px
+        z-index: 0
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+
+        .portfolioGrid
+            margin: 1% 1% 0 1%
+            .item
+                position: relative
+                width: 24.25%
+                display: inline-block
+                border: 1px solid $light-gray
+                margin-bottom: 1%
+                &:hover
+                    background: linear-gradient(180deg, #7DB1E5, #97C1EA)
+                img
+                    height: auto
+                    width: 100%
+                    display: inline-block
+
+                p
+                    width: 100%
+                    text-align: center
+                    font-weight: 300
+                    color: $transp-text
+                    margin: 6px 0 0 0
+
+    .windowWelcome
+        height: 70vh
+        position: absolute
+
+        top: 30px
+        left: 15px
+    .windowGallery
+        height: 84vh
+        width: 100%
+        position: absolute
+        border-radius: 5px
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+        left: 0
+        top: 20px
+        background-color: rgba(245,245,245,1)
+        display: none
+        .galleryWrapper
+
+            .galleryItem
+                display: inline-block
+
+
+
+                .galleryImage
+                    float: left
+                    display: inline-block
+                    width: 40%
+                    margin: 5%
+                    img
+                        width: 100%
+                        margin: 0
+                .galleryText
+                    float: right
+                    display: inline-block
+                    width: 40%
+                    margin: 5%
+                    p
+                        width: 100%
+                        margin: 0
+
+    .wrapper
+        #topNav
+            width: 100%
+            height: 20px
+            background-color: $transp-bar
+            position: fixed
+            top: 0
+            box-shadow: none
+            z-index: 0
+
+
+
+            ul.left li
+                position: relative
+                font-size: 12px
+
+            ul
+                list-style-type: none
+                padding: 0
+
+
+
+
+
+            ul.right
+                display: block
+                float: right
+                li
+                    display: inline-block
+                    margin: 0
+                    padding: 1px 5px
+                    font-size: 12px
+                    font-weight: 500
+
+@media screen and (min-width: 400px) and (max-width: 599px)
+    #dock
+        position: fixed
+        display: inline-block
+        bottom: -5px
+        left: 0
+        right: 0
+        transform: none
+        height: 50px
+        max-width: 100%
+
+        background-color: rgba(151,151,151,0.7)
+        border-radius: 0px
+        z-index: 9999
+
+        #sort
+            display: inline-block
+            position: relative
+            left: 50%
+            transform: translate(-50%)
+            img
+
+                height: 40px
+                width:  40px
+                margin: 2px 10px
+                float: left
+                cursor: pointer
+
+    .desktop_icon
+
+        cursor: pointer
+        .icon
+            padding: 0 20px
+            margin: 5px
+            &:hover
+                background-color: $transp-bar
+                border-radius: 5px
+
+
+        img
+            height: auto
+            width: 40px
+
+
+
+        p
+            width: 40px
+            font-size: 12px
+            text-align: center
+            font-weight: 100
+            color: rgb(245,245,245)
+            text-shadow: 0px 2px 8px #111111
+    #iconOverview
+        position: absolute
+        right: 10px
+        top: 90px
+
+
+    #iconAbout
+        position: absolute
+        right: 10px
+        top: 150px
+
+    #iconPortfolio
+        position: absolute
+        right: 10px
+        top: 210px
+
+    #iconWelcome
+        position: absolute
+        right: 10px
+        top: 30px
+
+    .window
+        width: 100%
+        height: 88vh
+        position: absolute
+        top: 20px
+        left: 0
+        right: 0
+
+        border-radius: 0px
+        .windowBar
+            border-top-left-radius: 0px
+            border-top-right-radius: 0px
+
+        .glyphicon-remove-sign
+            color: $red
+            margin: 10px 2px 0 10px
+
+
+        .glyphicon-minus-sign
+            color: $yellow
+            margin: 10px 2px 0 10px
+
+        .about
+            text-align: left
+            width: 90%
+            float: right
+
+
+    .windowPortfolio
+        display: none
+        position: absolute
+        left: 0
+        top: 20px
+        width: 100%
+        background-color: rgba(245,245,245,1)
+        border-radius: 0px
+        z-index: 0
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+
+        .portfolioGrid
+            margin: 1% 1% 0 1%
+            .item
+                position: relative
+                width: 32.33%
+                display: inline-block
+                border: 1px solid $light-gray
+                margin-bottom: 1%
+                &:hover
+                    background: linear-gradient(180deg, #7DB1E5, #97C1EA)
+                img
+                    height: auto
+                    width: 100%
+                    display: inline-block
+
+                p
+                    width: 100%
+                    font-size: 10px
+                    text-align: center
+                    font-weight: 300
+                    color: $transp-text
+                    margin: 2px 0 0 0
+
+    .windowWelcome
+        width: 80%
+        position: absolute
+        height: auto
+        top: 20px
+        left: 0px
+        h4, h5
+            font-size: 12px
+    .wrapper
+        #topNav
+            width: 100%
+            height: 20px
+            background-color: $transp-bar
+            position: fixed
+            top: 0
+            box-shadow: none
+            z-index: 0
+
+
+
+            ul.left li
+                position: relative
+
+
+            ul
+                list-style-type: none
+                padding: 0
+
+
+            ul.left
+                display: none
+
+            ul.right
+                display: block
+                float: left
+                li
+                    display: inline-block
+                    margin: 0
+                    padding: 1px 5px
+                    font-size: 12px
+                    font-weight: 500
+
+@media screen and (max-width: 399px)
+    #dock
+        position: fixed
+        display: inline-block
+        bottom: -5px
+        left: 0
+        right: 0
+        transform: none
+        height: 9%
+        max-width: 100%
+
+        background-color: rgba(151,151,151,0.7)
+        border-radius: 0px
+        z-index: 9999
+
+        #sort
+            display: inline-block
+            position: relative
+            left: 50%
+            transform: translate(-50%)
+            img
+
+                height: 30px
+                width:  30px
+                margin: 5px 10px
+                float: left
+                cursor: pointer
+
+    .desktop_icon
+
+        cursor: pointer
+        .icon
+            padding: 0 20px
+            margin: 0px
+            &:hover
+                background-color: $transp-bar
+                border-radius: 5px
+
+
+        img
+            height: auto
+            width: 50px
+
+
+
+        p
+            width: 50px
+            font-size: 12px
+            text-align: center
+            font-weight: 100
+            color: rgb(245,245,245)
+            text-shadow: 0px 2px 8px #111111
+    #iconOverview
+        position: absolute
+        right: 5px
+        top: 140px
+
+
+    #iconAbout
+        position: absolute
+        right: 5px
+        top: 230px
+
+    #iconPortfolio
+        position: absolute
+        right: 5px
+        top: 320px
+
+    #iconWelcome
+        position: absolute
+        right: 5px
+        top: 50px
+
+    .window
+        width: 100%
+        height: 88vh
+        position: absolute
+        top: 20px
+        left: 0
+        right: 0
+
+
+        border-radius: 0px
+        .windowBar
+            height: 30px
+            background: $grey-blue
+            border-top-left-radius: 5px
+            border-top-right-radius: 5px
+
+
+
+
+            ul.button
+                display: inline-block
+
+            ul.tab
+                display: inline-block
+                cursor: default
+
+
+                li
+                    //background-color: $tab-gray
+                    padding: 3px 12px
+                    font-weight: 900
+
+                    //border-radius: 5px
+                    color: rgba(1,1,1,0.6)
+                    letter-spacing: 0px
+
+        .glyphicon
+            cursor: auto
+
+        .glyphicon-remove-sign
+            color: $red
+            margin: 5px 2px 0 5px
+
+
+        .glyphicon-minus-sign
+            color: $yellow
+            margin: 5px 2px 0 5px
+
+
+
+        .about
+            text-align: left
+            width: 90%
+            float: right
+
+
+    .windowPortfolio
+        display: none
+        position: absolute
+        left: 0
+        top: 20px
+        width: 100%
+        background-color: rgba(245,245,245,1)
+        border-radius: 0px
+        z-index: 0
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+
+        .portfolioGrid
+            margin: 1% 1% 0 1%
+            .item
+                position: relative
+                width: 32.33%
+                display: inline-block
+                border: 1px solid $light-gray
+                margin-bottom: 1%
+                &:hover
+                    background: linear-gradient(180deg, #7DB1E5, #97C1EA)
+                img
+                    height: auto
+                    width: 100%
+                    display: inline-block
+
+                p
+                    width: 100%
+                    font-size: 10px
+                    text-align: center
+                    font-weight: 300
+                    color: $transp-text
+                    margin: 2px 0 0 0
+
+    .windowWelcome
+        width: 75%
+        position: absolute
+        height: auto
+        top: 20px
+        left: 0px
+        font-size: 12px
+    .wrapper
+        #topNav
+            width: 100%
+            height: 20px
+            background-color: $transp-bar
+            position: fixed
+            top: 0
+            box-shadow: none
+            z-index: 0
+
+
+
+            ul.left li
+                position: relative
+
+
+            ul
+                list-style-type: none
+                padding: 0
+
+
+            ul.left
+                display: none
+
+            ul.right
+                display: block
+                float: left
+                li
+                    display: inline-block
+                    margin: 0
+                    padding: 1px 5px
+                    font-size: 12px
+                    font-weight: 500
+
+
+@media screen and (min-width: 1201px) and (max-width: 1510px)
+    .windowGallery
+
+        width: 45%
+        position: absolute
+        border-radius: 5px
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+        left: 40%
+        top: 10%
+        background-color: rgba(245,245,245,1)
+        display: none

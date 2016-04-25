@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    <script src="js/typed.js"></script>
+  </head>
+  <body>
+    <div class="loaderWrapper">
+      <div id="loading">
+        <p class="loadText"></p>
+        <p class="loadStatus"></p>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="topNav">
+        <ul class="left">
+          <li class="miniLogo">JD</li>
+          <li class="bold">jOSeph</li>
+          <li>File</li>
+          <li>Edit</li>
+          <li>View</li>
+          <li class="help">Help</li>
+        </ul>
+        <ul class="right">
+          <li class="glyphicon glyphicon-signal"></li>
+          <li>100%</li>
+          <li id="time"></li>
+          <li>Joseph DePompeis</li>
+        </ul>
+      </div>
+      <div class="desktop_icon">
+        <div id="iconOverview" class="icon"><img src="images/folder.png">
+          <p>Overview</p>
+        </div>
+        <div id="iconAbout" class="icon"><img src="images/folder.png">
+          <p>About</p>
+        </div>
+        <div id="iconPortfolio" class="icon"><img src="images/folderFill.png">
+          <p>Portfolio</p>
+        </div>
+        <div id="iconWelcome" class="icon"><img src="images/folder.png">
+          <p>Welcome</p>
+        </div>
+      </div>
+      <div class="window windowOverview">
+        <div class="windowBar">
+          <ul class="button">
+            <li class="glyphicon glyphicon-remove-sign overviewClose"></li>
+            <li class="glyphicon glyphicon-minus-sign overviewMin"></li>
+          </ul>
+          <ul class="tab">
+            <li>OVERVIEW</li>
+          </ul>
+        </div>
+        <div class="windowIcon"></div><span class="about">
+          <h1>Joseph DePompeis</h1>
+          <h6>Version 13.37</h6>
+          <h3>Web Developer</h3>
+          <!-- <p>Degree <span> Business Management B.S.</span></p> -->
+          <p>Experience<span>~1.5 years</span></p>
+          <p><span>RubyHTML, CSS, Javascript/jQuery </span></p>
+          <p>Tools<span>Git, Photoshop, Atom/Brackets, Emmet</span></p>
+          <p>Environments<span>Windows, Mac, Linux</span></p></span>
+      </div>
+      <div class="window windowAbout">
+        <div class="windowBar">
+          <ul class="button">
+            <li class="glyphicon glyphicon-remove-sign aboutClose"></li>
+            <li class="glyphicon glyphicon-minus-sign aboutMin"></li>
+          </ul>
+          <ul class="tab">
+            <li>ABOUT</li>
+          </ul>
+        </div>
+        <div class="windowIcon"></div><span class="about">
+          <h1>Joseph DePompeis</h1>
+          <p>Degree <span>Business Management</span></p></span>
+      </div>
+      <div class="window windowSettings">
+        <div class="windowBar">
+          <ul class="button">
+            <li class="glyphicon glyphicon-remove-sign settingsClose"></li>
+            <li class="glyphicon glyphicon-minus-sign settingsMin"></li>
+          </ul>
+          <ul class="tab">
+            <li>SETTINGS  </li>
+          </ul>
+        </div><span class="setting">
+          <div class="wallpaper">
+            <h4>Set Wallpaper</h4>
+            <ul class="backgroundChange">
+              <li>
+                <button class="background1">Mountains</button>
+              </li>
+              <li>
+                <button class="background2">Sherbet</button>
+              </li>
+              <li>
+                <button class="background3">Oceanic</button>
+              </li>
+              <li>
+                <button class="background4">Silver</button>
+              </li>
+              <li>
+                <button class="background5">Night Light</button>
+              </li>
+            </ul>
+          </div></span>
+      </div>
+      <div class="window windowEmail">
+        <div class="windowBar">
+          <ul class="button">
+            <li class="glyphicon glyphicon-remove-sign emailClose"></li>
+            <li class="glyphicon glyphicon-minus-sign emailMin"></li>
+          </ul>
+          <ul class="tab">
+            <li>EMAIL to: ian@theiananderson.com</li>
+          </ul>
+        </div>
+        <form action="//formspree.io/ianderso222@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="_replyto" placeholder="Email">
+          <textarea type="text" name="message" placeholder="Let's work on something..."></textarea>
+          <input type="submit" value="SEND">
+        </form>
+      </div>
+      <div class="window windowWelcome">
+        <div class="windowBar">
+          <ul class="button">
+            <li class="glyphicon glyphicon-remove-sign welcomeClose"></li>
+            <li class="glyphicon glyphicon-minus-sign welcomeMin"></li>
+          </ul>
+          <ul class="tab">
+            <li>WELCOME  </li>
+          </ul>
+        </div><span class="welcomeText">
+          <h4>Hey there! My name is Joseph DePompeis. I am a Web Developer. Welcome to my site!</h4>
+          <h5>As of <strong><u>3/6/2016</u></strong> I am accepting clients and trying to join your team.</h5>
+          <h5>Odds are I would love to work with you, so go ahead, drop me a line.</h5>
+          <h5>- Click on the folders to the right to read some more about me or view some of my work.</h5>
+          <h5>- Click on the icons at the bottom to view some of my social pages, change the settings of this page, or send me an email.</h5></span>
+      </div>
+      <div class="window windowPortfolio">
+        <div class="windowBar">
+          <ul class="button">
+            <li class="glyphicon glyphicon-remove-sign portfolioClose"></li>
+            <li class="glyphicon glyphicon-minus-sign portfolioMin"></li>
+          </ul>
+          <ul class="tab">
+            <li>PORTFOLIO </li>
+          </ul>
+        </div>
+        <div class="portfolioGrid">
+          <div id="itemPersonal" class="item">   <img src="images/Personal.png">
+            <p>Personal Webpage   </p>
+          </div>
+          <div id="itemForest" class="item">   <img src="images/forest_case.png">
+            <p>HTML Template</p>
+          </div>
+          <div id="itemCate" class="item">   <img src="images/cate_case1.png">
+            <p>MaryCateBrown.com</p>
+          </div>
+          <div id="itemEWF" class="item">   <img src="images/ewf_case.png">
+            <p>EmbryWoodsFarms.com</p>
+          </div>
+          <div id="itemTaco" class="item">   <img src="images/taco_case1.png">
+            <p>Restuarant Mockup</p>
+          </div>
+          <div id="itemNews" class="item">  <img src="images/case_study_news.png">
+            <p>News Site Theme</p>
+          </div>
+          <div id="itemPrompt" class="item"><img src="images/case_prompt.png">
+            <p>Random Design Prompt Generator</p>
+          </div>
+        </div>
+      </div>
+      <div class="window windowGallery">
+        <div class="windowBar">
+          <ul class="button">
+            <li class="glyphicon glyphicon-remove-sign galleryClose"></li>
+            <li class="glyphicon glyphicon-minus-sign galleryMin"></li>
+          </ul>
+          <ul class="tab">
+            <li>PORTFOLIO GALLERY </li>
+          </ul>
+        </div>
+        <div class="galleryWrapper">
+          <div id="personal" class="galleryItem">
+            <div class="galleryImage"><img src="images/Personal.png"></div>
+            <div class="galleryText">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus iusto debitis odio ipsum nemo, nihil quibusdam accusamus deserunt fugit magni temporibus eligendi sunt in inventore quasi. Ratione, totam dolorem dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero expedita corrupti ipsum quasi blanditiis ratione porro nostrum, sed dignissimos doloremque nemo, voluptatem quo tempora tempore autem id laboriosam ullam.</p><a href="">
+                <p>View Site</p></a>
+            </div>
+          </div>
+          <div id="forest" class="galleryItem">
+            <div class="galleryImage"><img src="images/forest_case.png"></div>
+            <div class="galleryText">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus iusto debitis odio ipsum nemo, nihil quibusdam accusamus deserunt fugit magni temporibus eligendi sunt in inventore quasi. Ratione, totam dolorem dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero expedita corrupti ipsum quasi blanditiis ratione porro nostrum, sed dignissimos doloremque nemo, voluptatem quo tempora tempore autem id laboriosam ullam.</p><a href="">
+                <p>View Site</p></a>
+            </div>
+          </div>
+          <div id="cate" class="galleryItem">
+            <div class="galleryImage"><img src="images/cate_case1.png"></div>
+            <div class="galleryText">
+              <p> tore quasi. Ratione, totam dolorem dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero expedita corrupti ipsum quasi blanditiis ratione porro nostrum, sed dignissimos doloremque nemo, voluptatem quo tempora tempore autem id laboriosam ullam.</p><a href="">
+                <p>View Site</p></a>
+            </div>
+          </div>
+          <div id="ewf" class="galleryItem">
+            <div class="galleryImage"><img src="images/ewf_case.png"></div>
+            <div class="galleryText">
+              <p> tore quasi. Ratione, totam dolorem dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero expedita corrupti ipsum quasi blanditiis ratione porro nostrum, sed dignissimos doloremque nemo, voluptatem quo tempora tempore autem id laboriosam ullam.</p><a href="">
+                <p>View Site     </p></a>
+            </div>
+          </div>
+          <div id="taco" class="galleryItem">
+            <div class="galleryImage"><img src="images/taco_case1.png"></div>
+            <div class="galleryText">
+              <p> tore quasi. Ratione, totam dolorem dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero expedita corrupti ipsum quasi blanditiis ratione porro nostrum, sed dignissimos doloremque nemo, voluptatem quo tempora tempore autem id laboriosam ullam.</p><a href="">
+                <p>View Site </p></a>
+            </div>
+          </div>
+          <div id="news" class="galleryItem">
+            <div class="galleryImage"><img src="images/case_study_news.png"></div>
+            <div class="galleryText">
+              <p> tore quasi. Ratione, totam dolorem dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero expedita corrupti ipsum quasi blanditiis ratione porro nostrum, sed dignissimos doloremque nemo, voluptatem quo tempora tempore autem id laboriosam ullam.</p><a href="">
+                <p>View Site            </p></a>
+            </div>
+          </div>
+          <div id="prompts" class="galleryItem">
+            <div class="galleryImage"><img src="images/case_prompt.png"></div>
+            <div class="galleryText">
+              <p> tore quasi. Ratione, totam dolorem dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero expedita corrupti ipsum quasi blanditiis ratione porro nostrum, sed dignissimos doloremque nemo, voluptatem quo tempora tempore autem id laboriosam ullam.</p><a href="">
+                <p>View Site      </p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="dock">
+        <div id="sort"><a href="https://twitter.com/ian_a_anderson" target="_blank"><img src="images/twitter.png" id="dockTwitter"></a><a href="https://www.reddit.com/user/ianaanderson/" target="_blank"><img src="images/reddit.png" id="dockReddit"></a><a href="https://github.com/ianderso222" target="_blank"><img src="images/github.png" id="dockGithub"></a><a href="https://www.instagram.com/ianderso222/" target="_blank"><img src="images/insta.png" id="dockInsta"></a><img src="images/email.png" id="dockEmail"><img src="images/Settings.png" id="dockSettings"></div>
+      </div>
+    </div>
+  </body>
+  <script src="js/javascript.js"></script>
+</html>
